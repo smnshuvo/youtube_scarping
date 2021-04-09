@@ -4,7 +4,7 @@ let finalData = ""
 videos.forEach(function (video){
     let videoTitle = video.querySelector('yt-formatted-string').innerText;
     videoTitle = videoTitle.replace(",","|");
-    finalData+= `"${videoTitle}",`;
+    finalData+= `"${videoTitle}",\n`;
 
 })
 console.log(finalData);
